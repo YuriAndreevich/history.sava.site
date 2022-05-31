@@ -1,30 +1,26 @@
+import s from './b.module.css';
 
-import '../App.css';
-
-function b1() {
+function b5() {
   return (
-    <div className='bg-fon'>
-    <div className="wrapper">
-        <h1>Билет 6. История Беларуси</h1>
-        <details>
+    <div className={s.theme__style}>
+      <h1>Билет 5</h1>
+      <details>
+        <summary>
+          <h4>1</h4>
+        </summary>
+        текст
+      </details>
+      <details>
+        <summary> <h4>2</h4></summary>
+        текст
+      </details>
+      <details>
             <summary>
-                <h3>Назв</h3>
-            </summary><b>1</b>текст
-
+                <h3>3. Соотнесение события в истории Беларуси с общественно историческим процессом</h3>
+            </summary>
         </details>
-        <details>
-            <summary> <h3>названия</h3></summary>
-            текст
- </details>
-
-        <details>
-            <summary>
-                <h3>назв</h3>
-            </summary>текст
-        </details>
-    </div>
     </div>
   );
 }
 
-export default b1;
+export default b5;

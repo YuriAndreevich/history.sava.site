@@ -1,28 +1,25 @@
-
-import '../App.css';
+import s from './b.module.css';
 
 function b1() {
   return (
-    <div className='bg-fon'>
-    <div className="wrapper">
-        <h1>Билет 6. История Беларуси</h1>
-        <details>
-            <summary>
-                <h3>Назв</h3>
-            </summary><b>1</b>текст
-
-        </details>
-        <details>
-            <summary> <h3>названия</h3></summary>
-            текст
- </details>
-
-        <details>
-            <summary>
-                <h3>назв</h3>
-            </summary>текст
-        </details>
-    </div>
+    <div className={s.theme__style}>
+      <h1>Билет 1</h1>
+      <details>
+        <summary>
+          <h4>1</h4>
+        </summary>
+        текст
+      </details>
+      <details>
+        <summary> <h4>2</h4></summary>
+        текст
+      </details>
+      <details>
+        <summary>
+          <h4>3</h4>
+        </summary>
+        текст
+      </details>
     </div>
   );
 }
