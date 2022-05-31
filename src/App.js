@@ -27,22 +27,25 @@ import B24 from './Themes/b24'
 import B25 from './Themes/b25'
 
 import './App.css';
-import Menu from './components/Menu/Menu';
+import Menu from './components/Menu';
 import { useState } from 'react';
 
 
 function App() {
-    const [menu, setMenu] = useState(false)
-    const items = [{ value: 'Главная', href: '/main', icon: 'anchor' },
-    { value: 'Главная', href: '/main', icon: 'anchor' },
-    { value: 'Главная', href: '/main', icon: 'anchor' },
-    { value: 'Главная', href: '/main', icon: 'anchor' }]
+    const [menuActive, setMenuActive] = useState(false)
+    const items = [{ value: 'Главная', href: '/' },
+    { value: 'Билет 1', href: '/b1'},
+    { value: 'Билет 2', href: '/b2' },
+    { value: 'Билет 3', href: '/b3' },
+    { value: 'Билет 4', href: '/b4' },
+    { value: 'Билет 5', href: '/b5' },
+    { value: 'Билет 6', href: '/b6' }]
     return (
         <div className='app'>
-            <nav><div className='burger-btn' onClick={()=>setMenu(!menu)}>
+            <nav><div className='burger-btn' onClick={()=>setMenuActive(!menuActive)}>
+            <Menu header={'Бургер меню'} active={menuActive} setActive={setMenuActive} items={items}/>
                 <span />
             </div>
-
             </nav>
             <header>
                 <Link to='/b1'>b1</Link>
@@ -99,7 +102,7 @@ function App() {
                 <Route path='/b24' element={<B24 />} />
                 <Route path='/b25' element={<B25 />} />
             </Routes>
-            <Menu header={'Бургер меню'} setActive={setMenu} items={items}/>
+
         </div >
     );
 }

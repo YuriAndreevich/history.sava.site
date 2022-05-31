@@ -1,5 +1,4 @@
-
-import '../App.css';
+import s from './b.module.css';
 
 function b1() {
   return (
