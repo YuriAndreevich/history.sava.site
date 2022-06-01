@@ -1,22 +1,22 @@
 import s from './b.module.css';
 
-function b1() {
+function b19() {
   return (
     <div className={s.theme__style}>
-      <h1>Билет 1</h1>
+      <h1>Билет 19</h1>
       <details>
         <summary>
-          <h4>1</h4>
+          <h4>1.	Социально-экономическое развитие Беларуси в первой половине XIX в. Результаты реформирования сельского хозяйства. Начало промышленного переворота.</h4>
         </summary>
         текст
       </details>
       <details>
-        <summary> <h4>2</h4></summary>
+        <summary> <h4>2.	Становление государственного суверенитета Республики Беларусь в первой половине 1990-х гг.</h4></summary>
         текст
       </details>
       <details>
         <summary>
-          <h4>3</h4>
+          <h4>3.	Характеристика вклада деятеля науки (культуры) в ее раз¬витие.</h4>
         </summary>
         текст
       </details>
@@ -24,4 +24,4 @@ function b1() {
   );
 }
 
-export default b1;
+export default b19;

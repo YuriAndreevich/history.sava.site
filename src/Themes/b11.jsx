@@ -1,22 +1,22 @@
 import s from './b.module.css';
 
-function b1() {
+function b11() {
   return (
     <div className={s.theme__style}>
-      <h1>Билет 1</h1>
+      <h1>Билет 11</h1>
       <details>
         <summary>
-          <h4>1</h4>
+          <h4>1.	Культура Беларуси в XIV — первой половине XVI в. Формирование белорусской народности. </h4>
         </summary>
         текст
       </details>
       <details>
-        <summary> <h4>2</h4></summary>
+        <summary> <h4>2.	Германский оккупационный режим на территории Беларуси и политика геноцида местного населения в период Великой Отечественной войны. </h4></summary>
         текст
       </details>
       <details>
         <summary>
-          <h4>3</h4>
+          <h4>3.	Отражение событий истории Беларуси в произведениях белорусской литературы.</h4>
         </summary>
         текст
       </details>
@@ -24,4 +24,4 @@ function b1() {
   );
 }
 
-export default b1;
+export default b11;
