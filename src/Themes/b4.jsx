@@ -1,5 +1,5 @@
 import s from './b.module.css';
-import logo from '../../public/img/logo'
+import logo from '../img/b4.png'
 
 function b4() {
   return (
