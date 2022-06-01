@@ -1,0 +1,30 @@
+import themes from './'
+
+const items = [{ value: 'Главная', href: '/' },
+    { value: 'Билет 1', href: '/b1', el: <themes.B1 /> },
+    { value: 'Билет 2', href: '/b2', el: <themes.B2 /> },
+    { value: 'Билет 3', href: '/b3', el: <themes.B3 /> },
+    { value: 'Билет 4', href: '/b4', el: <themes.B4 /> },
+    { value: 'Билет 5', href: '/b5', el: <themes.B5 /> },
+    { value: 'Билет 6', href: '/b6', el: <themes.B6 /> },
+    { value: 'Билет 7', href: '/b7', el: <themes.B7 /> },
+    { value: 'Билет 8', href: '/b8', el: <themes.B8 /> },
+    { value: 'Билет 9', href: '/b9', el: <themes.B9 /> },
+    { value: 'Билет 10', href: '/b10', el: <themes.B10 /> },
+    { value: 'Билет 11', href: '/b11', el: <themes.B11 /> },
+    { value: 'Билет 12', href: '/b12', el: <themes.B12 /> },
+    { value: 'Билет 13', href: '/b13', el: <themes.B13 /> },
+    { value: 'Билет 14', href: '/b14', el: <themes.B14 /> },
+    { value: 'Билет 15', href: '/b15', el: <themes.B15 /> },
+    { value: 'Билет 16', href: '/b16', el: <themes.B16 /> },
+    { value: 'Билет 17', href: '/b17', el: <themes.B17 /> },
+    { value: 'Билет 18', href: '/b18', el: <themes.B18 /> },
+    { value: 'Билет 19', href: '/b19', el: <themes.B19 /> },
+    { value: 'Билет 20', href: '/b20', el: <themes.B20 /> },
+    { value: 'Билет 21', href: '/b21', el: <themes.B21 /> },
+    { value: 'Билет 22', href: '/b22', el: <themes.B22 /> },
+    { value: 'Билет 23', href: '/b23', el: <themes.B23 /> },
+    { value: 'Билет 24', href: '/b24', el: <themes.B24 /> },
+    { value: 'Билет 25', href: '/b25', el: <themes.B25 /> }]
+
+export default items

@@ -1,4 +1,4 @@
-.menu{
+.menu {
     position: fixed;
     width: 100vw;
     height: 100ch;
@@ -7,18 +7,20 @@
     transform: translate(-130%);
     transition: all 0.2s;
 }
-.menu .active{
+
+.menu .active {
     transform: translate(0);
 }
 
-.blur{
+.blur {
     width: 100vw;
     height: 100vh;
     backdrop-filter: blur(2px);
     position: absolute;
     left: 30%;
 }
-.menu__content{
+
+.menu__content {
     width: 30%;
     height: 100%;
     background-color: black;
@@ -28,7 +30,8 @@
     transition: all 0.4s;
     overflow: scroll;
 }
-.menu__header{
+
+.menu__header {
     padding: 10px;
     font-style: 2em;
     color: white;
@@ -36,32 +39,37 @@
     width: 100%;
     text-align: center;
 }
- ul li a{
-     color:white;
-     text-decoration: none;
-     font-size: 1.3em;
- }
- ul li{
-     display: flex;
-     align-items: center;
-     margin: 10px 0;
- }
- ul {
-     text-align: center;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
- }
- .material-icons{
-     color:white;
-     margin-left: 10px;
- }
 
- @media screen and (max-width: 786px){
-     .menu__content {
-         width: 100%;
-     }
-     .blur{
-         backdrop-filter: none;
-     }
- }
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.material-icons {
+    color: white;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 786px) {
+    .menu__content {
+        width: 100%;
+    }
+
+    .blur {
+        backdrop-filter: none;
+    }
+}

@@ -29,6 +29,10 @@ p{
   cursor: pointer;
 }
 
+header.links {
+  display: none;
+}
+
 
 .burger-btn:before{
   content: '';
