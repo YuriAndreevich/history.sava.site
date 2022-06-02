@@ -4,17 +4,17 @@ function b18() {
   return (
     <div className={s.theme__style}>
       <h1>Билет 18</h1>
-      <details>
+      <details className={s.theme__details}>
         <summary>
           <h4>1.	Политика российского правительства в Беларуси в первой половине XIX в. Беларусь во время Отечественной войны 1812 г. Общественно-политические движения.</h4>
         </summary>
         текст
       </details>
-      <details>
+      <details className={s.theme__details}>
         <summary> <h4>2.	Развитие науки и образования, литературы и искусства в БССР во второй половине 1950-х — 1980-е гг.</h4></summary>
         текст
       </details>
-      <details>
+      <details className={s.theme__details}>
         <summary>
           <h4>3.	Соотнесение события в истории Беларуси с общественно-историческим процессом.</h4>
         </summary>

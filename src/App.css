@@ -26,38 +26,11 @@ p{
 }
 
 .burger-btn{
-  width: 20px;
-  height: 20px;
-  margin-left: 20px;
   position: relative;
   cursor: pointer;
+ height: 32px;
 }
 
 header.links {
   display: none;
-}
-
-
-.burger-btn:before{
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 20px;
-  height: 2px;
-  background-color: black;
-}
-.burger-btn span{
-  position: absolute;
-  top: 9px;
-  width: 20px;
-  height: 2px;
-  background-color: black;
-}
-.burger-btn:after{
-  content: '';
-  position: absolute;
-  background-color: black;
-  bottom: 0;
-  width: 20px;
- height: 2px;
 }
