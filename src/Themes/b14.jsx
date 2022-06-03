@@ -3,7 +3,7 @@ import s from './b.module.css';
 function b14() {
   return (
     <div className={s.theme__style}>
-      <h1>Билет 14</h1>
+      <p className={s.bilet__number}>Билет 14</p>
       <details className={s.theme__details}>
         <summary>
           <h4>1.	Реформация и Контрреформация. Берестейская церковная уния 1596 г. и распространение униатства на территории Беларуси.</h4>

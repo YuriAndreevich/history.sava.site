@@ -3,7 +3,7 @@ import s from './b.module.css';
 function b18() {
   return (
     <div className={s.theme__style}>
-      <h1>Билет 18</h1>
+      <p className={s.bilet__number}>Билет 18</p>
       <details className={s.theme__details}>
         <summary>
           <h4>1.	Политика российского правительства в Беларуси в первой половине XIX в. Беларусь во время Отечественной войны 1812 г. Общественно-политические движения.</h4>

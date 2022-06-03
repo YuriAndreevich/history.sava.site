@@ -3,7 +3,7 @@ import s from './b.module.css';
 function b22() {
   return (
     <div className={s.theme__style}>
-      <h1>Билет 22</h1>
+      <p className={s.bilet__number}>Билет 22</p>
       <details className={s.theme__details}>
         <summary>
           <h4>1.	События революций 1905—1907 гг. и Февральской 1917 г. в Беларуси.</h4>

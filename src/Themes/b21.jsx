@@ -3,7 +3,7 @@ import s from './b.module.css';
 function b21() {
   return (
     <div className={s.theme__style}>
-      <h1>Билет 21</h1>
+      <p className={s.bilet__number}>Билет 21</p>
       <details className={s.theme__details}>
         <summary>
           <h4>1.	Восстание 1863—1864 гг. и общественно-политическое положение в Беларуси. Народнические и социал-демократические организации.</h4>

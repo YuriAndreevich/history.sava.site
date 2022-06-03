@@ -3,7 +3,7 @@ import s from './b.module.css';
 function b23() {
   return (
     <div className={s.theme__style}>
-      <h1>Билет 23</h1>
+      <p className={s.bilet__number}>Билет 23</p>
       <details className={s.theme__details}>
         <summary>
           <h4>1.	Развитие капиталистических отношений в сельском хозяйстве и промышленности Беларуси во второй половине XIX — начале XX в.</h4>

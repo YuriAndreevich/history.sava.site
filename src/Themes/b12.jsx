@@ -3,7 +3,7 @@ import s from './b.module.css';
 function b12() {
   return (
     <div className={s.theme__style}>
-      <h1>Билет 12</h1>
+      <p className={s.bilet__number}>Билет 12</p>
       <details className={s.theme__details}>
         <summary>
           <h4>1.	Объединение Великого Княжества Литовского и Польского королевства в составе Речи Посполитой: причины, условия, итоги Люблинской унии. Статут ВКЛ 1588 г. </h4>

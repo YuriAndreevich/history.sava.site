@@ -3,7 +3,7 @@ import s from './b.module.css';
 function b17() {
   return (
     <div className={s.theme__style}>
-      <h1>Билет 17</h1>
+      <p className={s.bilet__number}>Билет 17</p>
       <details className={s.theme__details}>
         <summary>
           <h4>1.	Разделы Речи Посполитой и их влияние на положение белорусских земель. Восстание 1794 г. и его события в Беларуси.</h4>

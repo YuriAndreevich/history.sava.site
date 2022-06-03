@@ -3,7 +3,7 @@ import s from './b.module.css';
 function b13() {
   return (
     <div className={s.theme__style}>
-      <h1>Билет 13</h1>
+      <p className={s.bilet__number}>Билет 13</p>
       <details className={s.theme__details}>
         <summary>
           <h4>1.	Становление фольварочно-барщинной системы хозяйствования в Великом Княжестве Литовском. Городская жизнь  на территории Беларуси во второй половине XVI — XVIII в.</h4>

@@ -20,7 +20,11 @@
     min-width: 310px;
 }
 
-
+.bilet__numbervopros{
+    font-size: 2.28rem;
+    margin: 0;
+    padding: 0;
+}
 details:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     min-width: 310px;
@@ -61,14 +65,14 @@ li{
     text-align: center;
     text-decoration: solid;
     padding: 0;
-    margin: 10px auto;
+    margin: 7px auto;
     color: black;
     position: fixed;
      width: 100%; 
      top: 0;
       left: 0;
       z-index: 50;
-      font-size: 25px;
+      font-size: 2.28rem;
 }
 @media screen and (max-width: 786px) {
     .theme__style {

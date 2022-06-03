@@ -3,7 +3,7 @@ import s from './b.module.css';
 function b6() {
   return (
     <div className={s.theme__style}>
-      <h1>Билет 6</h1>
+      <p className={s.bilet__number}>Билет 6</p>
       <details className={s.theme__details}>
         <summary>
           <h4>1.	Образование Великого Княжества Литовского: причины, процесс и основные концепции. </h4>

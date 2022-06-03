@@ -3,7 +3,7 @@ import s from './b.module.css';
 function b8() {
   return (
     <div className={s.theme__style}>
-      <h1>Билет 8</h1>
+      <p className={s.bilet__number}>Билет 8</p>
       <details className={s.theme__details}>
         <summary>
           <h4>1.	Кревская уния и ее последствия для белорусских земель. Грюнвальдская битва.</h4>

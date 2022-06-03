@@ -3,7 +3,7 @@ import s from './b.module.css';
 function b15() {
   return (
     <div className={s.theme__style}>
-      <h1>Билет 15</h1>
+      <p className={s.bilet__number}>Билет 15</p>
       <details className={s.theme__details}>
         <summary>
           <h4>1.	Культура Беларуси во второй половине XVI — первой половине XVII в.</h4>

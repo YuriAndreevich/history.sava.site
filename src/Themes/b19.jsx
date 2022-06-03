@@ -3,7 +3,7 @@ import s from './b.module.css';
 function b19() {
   return (
     <div className={s.theme__style}>
-      <h1>Билет 19</h1>
+      <p className={s.bilet__number}>Билет 19</p>
       <details className={s.theme__details}>
         <summary>
           <h4>1.	Социально-экономическое развитие Беларуси в первой половине XIX в. Результаты реформирования сельского хозяйства. Начало промышленного переворота.</h4>

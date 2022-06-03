@@ -3,20 +3,20 @@ import s from './b.module.css';
 function b3() {
   return (
     <div className={s.theme__style}>
-      <h1>Билет 3</h1>
+      <p className={s.bilet__number}>Билет 3</p>
       <details className={s.theme__details}>
         <summary>
-          <h4>1.	Полоцкое княжество как первая историческая форма государственности на территории Беларуси в X—XI вв.</h4>
+          <p className={s.bilet__numbervopros}>1.	Полоцкое княжество как первая историческая форма государственности на территории Беларуси в X—XI вв.</p>
         </summary>
         текст
       </details>
       <details className={s.theme__details}>
-        <summary> <h4>2.	Беларусь в условиях польско-советской войны 1919—1921 гг. Последствия Рижского мира для Беларуси.</h4></summary>
+        <summary> <p className={s.bilet__numbervopros}>2.	Беларусь в условиях польско-советской войны 1919—1921 гг. Последствия Рижского мира для Беларуси.</p></summary>
         текст
       </details>
       <details className={s.theme__details}>
         <summary>
-          <h4>3. Соотнесение событий истории Беларуси и всемирной истории.</h4>
+          <p className={s.bilet__numbervopros}>3. Соотнесение событий истории Беларуси и всемирной истории.</p>
         </summary>
         <p>Отмена крепостного права на российских и белорусских землях с выделением общего и особенностей.</p>
         <p>Особенности проведения аграрной реформы.</p>

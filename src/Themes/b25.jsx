@@ -3,7 +3,7 @@ import s from './b.module.css';
 function b25() {
   return (
     <div className={s.theme__style}>
-      <h1>Билет 25</h1>
+      <p className={s.bilet__number}>Билет 25</p>
       <details className={s.theme__details}>
         <summary>
           <h4>1.	События Первой мировой войны на Беларуси. Германский оккупационный режим. Условия и последствия Брестского мирного договора для Беларуси.</h4>

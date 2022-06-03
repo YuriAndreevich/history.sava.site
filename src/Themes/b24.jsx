@@ -3,7 +3,7 @@ import s from './b.module.css';
 function b24() {
   return (
     <div className={s.theme__style}>
-      <h1>Билет 24</h1>
+      <p className={s.bilet__number}>Билет 24</p>
       <details className={s.theme__details}>
         <summary>
           <h4>1.	Культура Беларуси во второй половине XIX — начале XX в. Условия формирования белорусской нации и особенности её становления.</h4>

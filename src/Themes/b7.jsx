@@ -3,7 +3,7 @@ import s from './b.module.css';
 function b7() {
   return (
     <div className={s.theme__style}>
-      <h1>Билет 7</h1>
+      <p className={s.bilet__number}>Билет 7</p>
       <details className={s.theme__details}>
         <summary>
           <h4>1.	Укрепление великокняжеской власти в Великом Княжестве Литовском в конце XIII — XIV в.</h4>
