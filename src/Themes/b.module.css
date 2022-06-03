@@ -1,5 +1,5 @@
 .theme__style {
-    max-width: 1170px;
+    max-width: 1400px;
     height: 100%;
     margin: 30px auto 20px;
     padding: 20px;
@@ -73,9 +73,10 @@ li{
 @media screen and (max-width: 786px) {
     .theme__style {
         margin: 30px 0px;
-        padding: 0;
+        padding: 20px 0 0 0;
       
     }
+    .theme__details{}
     p{
  font-size: 1rem;
  margin: 10px;
