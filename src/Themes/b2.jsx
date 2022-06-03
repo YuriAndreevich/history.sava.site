@@ -6,7 +6,7 @@ function b2() {
       <p className={s.bilet__number}>Билет 2</p>
       <details className={s.theme__details}>
         <summary>
-          <h4>1.	Расселение восточнославянских племен на территории Беларуси и жизнь населения         в VIII—IX вв</h4>
+          <h4>1.	Расселение восточнославянских племен на территории Беларуси и жизнь населения в VIII—IX вв</h4>
         </summary>
         текст
       </details>
