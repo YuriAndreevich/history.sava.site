@@ -60,7 +60,7 @@ li{
     text-align: left;
 }
 .bilet__number{
-    z-index: 50;
+    z-index: 51;
     pointer-events: none;
     text-align: center;
     text-decoration: solid;
@@ -68,7 +68,7 @@ li{
     margin: 7px auto;
     color: black;
     position: fixed;
-     width: 100%; 
+     width: 95%; 
      top: 0;
       left: 0;
       z-index: 50;
