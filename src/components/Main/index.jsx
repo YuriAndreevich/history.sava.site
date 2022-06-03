@@ -5,7 +5,7 @@ import s from './main.module.css'
 const Main = () => {
     return(
 <div className={s.main__cover}>
-<br></br><br></br><br></br><p style={{color:'white'}}>Экзаменационные билеты по Истории Беларуси</p>
+<br></br><br></br><br></br><p className={s.main__text}>Экзаменационные билеты по Истории Беларуси</p>
 
 <details style={s.details}><summary>Онлайн учебник</summary><embed src={p} width="700" height="800" /></details>
 
