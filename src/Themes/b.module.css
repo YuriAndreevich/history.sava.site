@@ -20,72 +20,23 @@
     min-width: 310px;
 }
 
-.bilet__numbervopros{
+.bilet__numbervopros {
     font-size: 2.28rem;
     margin: 0;
     padding: 0;
 }
-details:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    min-width: 310px;
-}
 
-summary {
-    text-align: left;
-    padding: 10px;
-    margin: 10px;
-    list-style: none;
-}
-
-h1 {
+.bilet__number {
     pointer-events: none;
     text-align: center;
     text-decoration: solid;
     padding: 0;
-    margin: 0;
-    color: black;
-    position:fixed;
-     width: 100%; 
-     top: 0;
-      left: 0;
-      z-index: 50;
-      font-size: 45px;
-}
-p{
-    text-indent: 25px;
-    font-size: 1.5rem;
-    margin: 20px;
-}
-li{
-    text-align: left;
-}
-.bilet__number{
-    z-index: 51;
-    pointer-events: none;
-    text-align: center;
-    text-decoration: solid;
-    padding: 0;
-    margin: 7px auto;
+    margin: 7px;
     color: black;
     position: fixed;
-     width: 95%; 
-     top: 0;
-      left: 0;
-      z-index: 50;
-      font-size: 2.28rem;
-}
-@media screen and (max-width: 786px) {
-    .theme__style {
-        margin: 30px 0px;
-        padding: 20px 0 0 0;
-      
-    }
-    .theme__details{}
-    p{
- font-size: 1rem;
- margin: 10px;
-    }
-    .blur {
-        backdrop-filter: none;
-    }
+    width: calc(100%-35px);
+    top: 0;
+    left: 0;
+    z-index: 50;
+    font-size: 2.28rem;
 }
