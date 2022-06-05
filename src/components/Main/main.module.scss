@@ -36,3 +36,9 @@
         box-shadow: none;
     }
 }
+
+@media screen and (max-width: 786px) {
+    .main_hidden {
+        display: none;
+    }
+}
