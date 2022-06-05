@@ -25,6 +25,7 @@ const items = [{ naz: 'Главная', href: '/' },
     { naz: 'Билет 22', href: '/b22', el: <themes.B22 /> },
     { naz: 'Билет 23', href: '/b23', el: <themes.B23 /> },
     { naz: 'Билет 24', href: '/b24', el: <themes.B24 /> },
-    { naz: 'Билет 25', href: '/b25', el: <themes.B25 /> }]
+    { naz: 'Билет 25', href: '/b25', el: <themes.B25 /> },
+    { naz: '', href: '/b25', el: <themes.B25 /> }]
 
 export default items
