@@ -23,24 +23,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.search{
-  margin: 100px;
-  width: 1400px;
-  height: 100hv;
-  color: white;
-  text-align: left;
-  li{
-    text-align: left;
-  }
-}
+
 * {
   margin: 0px;
   padding: 0px;
   font-family: 'Roboto';
   box-sizing: border-box;
-}
 
-embed {
+}
+input{
+  width: 300px;
+ }
+iframe {
   margin: auto;
   display: block;
   width: 680px;
@@ -81,17 +75,16 @@ p {
   margin: 20px;
 }
 
-li {
-  text-align: left;
-}
-
-
 @media screen and (max-width: 786px) {
   img {
     max-width: 300px;
     align-items: center;
   }
-
+  .main__search{ display: none; }
+  .search{
+    width: 100%;
+    margin: 300px 5px;
+  }
   .menu__content {
     width: 100%;
     

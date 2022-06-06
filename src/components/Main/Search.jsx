@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import './main.scss'
 
 function Search() {
 
         const historyData = [
-            { age: '2862 год — первое упоминание в хронике города Полоцк как центра племени кривичей.' },
+            { age: '862 год — первое упоминание в хронике города Полоцк как центра племени кривичей.' },
             { age: '1067 год - битва на Немиге, внесенная в "Повесть временных лет", где впервые упоминается Минск.' },
             { age: '1230 год — основание Великого княжества Литовского.' },
             { age: '1569 год — Польское Королевство и Великое княжество Литовское объединяются в федеральное государство Речь Посполитую.' },
@@ -27,12 +28,12 @@ function Search() {
     
     return (
         <div className='search'>
-            <input onChange={(event)=>setValue(event.target.value)}/>
-            <ul>{filteredHistory.map((data, index) =>
-                        <li key={index}>
+            <input placeholder="Введите дату" className="search__input" onChange={(event)=>setValue(event.target.value)}/>
+            { value.length ? <ul className="search__text">{filteredHistory.map((data, index) =>
+                        <li  key={index}>
                             {data.age}
                         </li>)}
-                    </ul>
+                    </ul> : <div></div>}
         </div>
     )
 }
