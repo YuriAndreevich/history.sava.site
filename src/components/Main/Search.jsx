@@ -3,16 +3,16 @@ import React, { useState } from "react";
 function Search() {
 
     const historyData = [
-        { age: '1925', body: "xtn", },
-        { age: '1000', body: "лdasd", },
+        { age: '1925  30 июня', body: "xtn", },
+        { age: '1000 30 мая', body: "лdasd", },
         { age: '945', body: "gdffd", }
     ]
-    console.log(historyData[1])
+
 
     const [value, setValue] = useState('')
 
-    const filteredHistory = historyData.filter(data =>
-        data.name.toLowerCase().includes(value.toLowerCase())
+    const filteredHistory = historyData.filter((data) =>
+        data.age.toLowerCase().includes(value.toLowerCase())
     )
     
     return (
