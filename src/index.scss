@@ -23,7 +23,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+.search{
+  margin: 100px;
+  width: 1400px;
+  height: 100hv;
+  color: white;
+  text-align: left;
+  li{
+    text-align: left;
+  }
+}
 * {
   margin: 0px;
   padding: 0px;
