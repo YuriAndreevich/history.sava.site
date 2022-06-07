@@ -19,7 +19,7 @@
         z-index: 50;
         font-size: 2.28rem;
         text-align: center;
-        width: 90%;
+        width: 100%;
     }
 
     &__details {
@@ -31,7 +31,7 @@
         border-radius: 35px;
         margin: 10px;
         min-width: 310px;
-        margin: 20px;
+        margin: 0 auto;
 
         p {
             margin: 20px;
@@ -39,11 +39,12 @@
         }
 
         summary p {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
     }
+
     &__numbervopros {
-        font-size: 2rem;
+        font-size: 1rem;
         margin: 0;
         padding: 0;
     }

@@ -37,8 +37,9 @@
 }
 
 .search {
-    margin: 400px auto;
-    width: 1400px;
+    margin: 400px 5px;
+    max-width: 1400px;
+    min-width: 310px;
     height: 100hv;
     background-color: white;
     color: white;
@@ -46,7 +47,6 @@
     transform: (-50%, -50%);
     text-align: center;
     text-decoration: none;
-
 
     &__input {
         border: none;
@@ -60,13 +60,13 @@
     &__text {
         font-size: 1.5rem;
         color: black;
-        padding: 0 10px 10px 10px;
+        padding: 0 auto;
         text-align: left;
         list-style-type: none;
         text-indent: 25px;
 
-        li{
-margin: 10px;
+        li {
+            margin: 10px;
         }
     }
 }
