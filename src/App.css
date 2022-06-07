@@ -24,7 +24,7 @@ main{
 .burger-btn{
   position: relative;
   cursor: pointer;
- height: 32px;
+  height: 32px;
 }
 
 header.links {

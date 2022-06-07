@@ -1,4 +1,4 @@
-import s from './b.module.css';
+import s from './b.module.scss';
 
 function b6() {
   return (

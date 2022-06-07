@@ -68,13 +68,11 @@ h1 {
   z-index: 50;
   font-size: 45px;
 }
-
-p {
-  text-indent: 25px;
+p{
+  color: black;
   font-size: 1.5rem;
   margin: 20px;
 }
-
 @media screen and (max-width: 786px) {
   img {
     max-width: 300px;
@@ -83,7 +81,7 @@ p {
   .main__search{ display: none; }
   .search{
     width: 100%;
-    margin: 300px 5px;
+    margin: 300px 5px 5px;
   }
   .menu__content {
     width: 100%;
@@ -114,7 +112,9 @@ p {
     font-size: 1rem;
     margin: 10px;
   }
-
+h1{
+  text-align: center;
+}
   .blur {
     backdrop-filter: none;
   }

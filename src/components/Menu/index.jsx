@@ -10,7 +10,11 @@ const Menu = ({ header, items, active, setActive }) => {
                     <div className="menu__header">
                         {header}
                     </div>
-                    <ul> {items.map((item, index) =>
+                    <ul>
+                    <Link to='/'><a>Главная</a></Link>
+                    <Link to='/search'><a>Поиск по датам</a></Link>
+                    <hr style={{width:'100hv'}}/>
+                         {items.map((item, index) =>
                         <li key={index}>
                             <Link to={item.href}>{item.naz}</Link>
                         </li>)}

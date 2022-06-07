@@ -7,7 +7,7 @@
     left: 0;
     transform: translate(-130%);
     transition: all 0.2s;
-    
+
 }
 
 .menu .active {
@@ -35,7 +35,6 @@
 }
 
 .menu__header {
-    padding: 10px;
     font-style: 2em;
     color: white;
     width: 100%;
@@ -61,9 +60,15 @@ ul {
     align-items: center;
 }
 
-.material-icons {
+a {
     color: white;
-    margin-left: 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 8px;
+}
+
+hr {
+    width: 100%;
 }
 
 @media screen and (max-width: 786px) {

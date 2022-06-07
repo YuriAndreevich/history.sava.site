@@ -1,4 +1,4 @@
-import s from './b.module.css';
+import s from './b.module.scss';
 import img from '../img/v3/b23.png'
 
 function b23() {

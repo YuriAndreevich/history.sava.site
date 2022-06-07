@@ -1,7 +1,6 @@
 import themes from './'
 
-const items = [{ naz: 'Главная', href: '/' },
-{ naz: 'Поиск по датам', href: '/search' },
+const items = [
     { naz: 'Билет 1', href: '/b1', el: <themes.B1 /> },
     { naz: 'Билет 2', href: '/b2', el: <themes.B2 /> },
     { naz: 'Билет 3', href: '/b3', el: <themes.B3 /> },
