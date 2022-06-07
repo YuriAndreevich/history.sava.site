@@ -2,19 +2,19 @@ import s from './b.module.scss';
 
 function b12() {
   return (
-    <div className={s.theme__style}>
+    <div className={s.bilet}>
       <p className={s.bilet__number}>Билет 12</p>
-      <details className={s.theme__details}>
+      <details className={s.bilet__details}>
         <summary>
           <p className={s.bilet__numbervopros}>1.	Объединение Великого Княжества Литовского и Польского королевства в составе Речи Посполитой: причины, условия, итоги Люблинской унии. Статут ВКЛ 1588 г. </p>
         </summary>
         текст
       </details>
-      <details className={s.theme__details}>
+      <details className={s.bilet__details}>
         <summary> <p className={s.bilet__numbervopros}>2.	Массовая борьба белорусского народа против немецко-фашистских оккупантов в годы Великой Отечественной войны.</p></summary>
         текст
       </details>
-      <details className={s.theme__details}>
+      <details className={s.bilet__details}>
         <summary>
           <p className={s.bilet__numbervopros}>3.	Анализ содержания исторического документа.</p>
         </summary>

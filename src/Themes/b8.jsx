@@ -2,9 +2,9 @@ import s from './b.module.scss';
 
 function b8() {
   return (
-    <div className={s.theme__style}>
+    <div className={s.bilet}>
       <p className={s.bilet__number}>Билет 8</p>
-      <details className={s.theme__details}>
+      <details className={s.bilet__details}>
         <summary>
           <p className={s.bilet__numbervopros}>1.	Кревская уния и ее последствия для белорусских земель. Грюнвальдская битва.</p>
         </summary>
@@ -17,11 +17,11 @@ function b8() {
         <p>Войском крестоносцев управлял магистр (глава) Тевтонского ордена. Битва началась с атаки конницы Витовта. Крестоносцы, строй которых напоминал «клин», начали намеренно отступать, пока не дошли до скрытых от глаз бомбард — пушек, стрелявших каменными ядрами. Но это не остановило конницу Витовта. Тогда тяжеловоо-руженная конница крестоносцев нанесла ответный удар и вынудила отступить часть войск Витовта. Исключительную стойкость проявили три полка Смоленского княжества. Два из них соединились потом с хоругвями польского войска, перешедшего в наступление. Войска союзников окружили рыцарей и нанесли им окончательное поражение.</p>
 
       </details>
-      <details className={s.theme__details}>
+      <details className={s.bilet__details}>
         <summary> <p className={s.bilet__numbervopros}>2.	Политика белорусизации и ее результаты. Развитие науки и образования, литературы и искусства в 1920-1930-е гг.</p></summary>
         текст
       </details>
-      <details className={s.theme__details}>
+      <details className={s.bilet__details}>
         <summary>
           <p className={s.bilet__numbervopros}>3.	Объяснение причинно-следственных связей между историческими фактами.</p>
         </summary>

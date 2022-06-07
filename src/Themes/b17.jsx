@@ -3,19 +3,19 @@ import img from '../img/v3/b17.png'
 
 function b17() {
   return (
-    <div className={s.theme__style}>
+    <div className={s.bilet}>
       <p className={s.bilet__number}>Билет 17</p>
-      <details className={s.theme__details}>
+      <details className={s.bilet__details}>
         <summary>
           <p className={s.bilet__numbervopros}>1.	Разделы Речи Посполитой и их влияние на положение белорусских земель. Восстание 1794 г. и его события в Беларуси.</p>
         </summary>
         текст
       </details>
-      <details className={s.theme__details}>
+      <details className={s.bilet__details}>
         <summary> <p className={s.bilet__numbervopros}>2.	Осуществление политики перестройки в БССР во второй половине 1980-х гг. и попытки ускорения социально-экономического развития. Преодоление последствий Чернобыльской аварии.</p></summary>
         текст
       </details>
-      <details className={s.theme__details}>
+      <details className={s.bilet__details}>
         <summary>
           <p className={s.bilet__numbervopros}>3.	Отражение событий истории Беларуси в произведениях белорусского искусства.</p>
         </summary>

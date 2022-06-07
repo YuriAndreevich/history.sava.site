@@ -1,18 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './Menu.css'
+import './Menu.scss'
 
 const Menu = ({ header, items, active, setActive }) => {
     return (
         <div className={active ? 'menu__active' : 'menu'} onClick={() => setActive(false)}>
             <div className="blur">
                 <div className="menu__content">
-                    <div className="menu__header">
-                        {header}
-                    </div>
                     <ul>
-                    <Link to='/'><a>Главная</a></Link>
-                    <Link to='/search'><a>Поиск по датам</a></Link>
+                    <li><Link to='/'>Главная</Link></li>
+                    <li><Link to='/search'>Поиск по датам</Link></li>
                     <hr style={{width:'100hv'}}/>
                          {items.map((item, index) =>
                         <li key={index}>

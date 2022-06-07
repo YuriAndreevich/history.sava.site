@@ -2,9 +2,9 @@ import s from './b.module.scss';
 
 function b7() {
   return (
-    <div className={s.theme__style}>
+    <div className={s.bilet}>
       <p className={s.bilet__number}>Билет 7</p>
-      <details className={s.theme__details}>
+      <details className={s.bilet__details}>
         <summary>
           <p className={s.bilet__numbervopros}>1.	Укрепление великокняжеской власти в Великом Княжестве Литовском в конце XIII — XIV в.</p>
         </summary>
@@ -15,11 +15,11 @@ function b7() {
         <p><strong>3. Борьба за великое княжение.</strong> После смерти Ольгерда великим князем литовским в 1377—1392 гг. стал его сын Ягайло. Однако его не признал старший сын Ольгерда князь Андрей Полоцкий, который вынужден был покинуть Полоцк и заключил союз с московским князем Дмитрием Ивановичем. В 1380 г. он участвовал в Куликовской битве на стороне Москвы. Ягайло с войском двигался на помощь татарам, но не успел вовремя подойти. Дмитрий Иванович за победу над татарами получил прозвище Донской. После нескольких лет службы у московского князя Андрей Полоцкий вернулся на родину и отвоевал Полоцк.</p>
 
       </details>
-      <details className={s.theme__details}>
+      <details className={s.bilet__details}>
         <summary> <p className={s.bilet__numbervopros}>2.	Положение Западной Беларуси в составе Польши (1921— 1939 гг.). Политика польских властей в отношении белорусского населения. </p></summary>
         текст
       </details>
-      <details className={s.theme__details}>
+      <details className={s.bilet__details}>
         <summary>
           <p className={s.bilet__numbervopros}>3.	Раскрытие содержания исторических терминов.</p>
         </summary>

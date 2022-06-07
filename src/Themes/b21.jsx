@@ -4,19 +4,19 @@ import img2 from '../img/v3/b21_2.png'
 
 function b21() {
   return (
-    <div className={s.theme__style}>
+    <div className={s.bilet}>
       <p className={s.bilet__number}>Билет 21</p>
-      <details className={s.theme__details}>
+      <details className={s.bilet__details}>
         <summary>
           <p className={s.bilet__numbervopros}>1.	Восстание 1863—1864 гг. и общественно-политическое положение в Беларуси. Народнические и социал-демократические организации.</p>
         </summary>
         текст
       </details>
-      <details className={s.theme__details}>
+      <details className={s.bilet__details}>
         <summary> <p className={s.bilet__numbervopros}>2.	Характерные черты модели социально-экономического развития Республики Беларусь.</p></summary>
         текст
       </details>
-      <details className={s.theme__details}>
+      <details className={s.bilet__details}>
         <summary>
           <p className={s.bilet__numbervopros}>3.	Отражение событий истории Беларуси в произведениях белорусского искусства.</p>
         </summary>

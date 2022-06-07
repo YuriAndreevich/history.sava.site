@@ -4,19 +4,15 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        color: white;
+
+        p {
+            color: white;
+            font-size: 1.5rem;
+        }
 
         &__details {
             width: 50px;
             text-align: center;
-
-            details:hover {
-                width: 10px;
-
-            }
-        }
-        &__text{
-            color: white;
         }
 
         &__search {
@@ -27,12 +23,16 @@
             width: 100%;
         }
 
-
-
         .btn {
             background-color: rgba(0, 0, 0, 0);
             box-shadow: none;
         }
+    }
+
+    &__text {
+        font-size: 2.28rem;
+        text-indent: 0;
+        padding: 100px 0 0 0;
     }
 }
 
@@ -45,8 +45,7 @@
     border-radius: 35px;
     transform: (-50%, -50%);
     text-align: center;
-
-
+    text-decoration: none;
 
 
     &__input {
@@ -61,11 +60,13 @@
     &__text {
         font-size: 1.5rem;
         color: black;
+        padding: 0 10px 10px 10px;
+        text-align: left;
+        list-style-type: none;
+        text-indent: 25px;
+
+        li{
+margin: 10px;
+        }
     }
-
-    ul {
-        align-items: left;
-
-    }
-
 }

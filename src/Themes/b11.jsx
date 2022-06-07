@@ -4,9 +4,9 @@ import img2 from '../img/v3/b11_2.png'
 
 function b11() {
   return (
-    <div className={s.theme__style}>
+    <div className={s.bilet}>
       <p className={s.bilet__number}>Билет 11</p>
-      <details className={s.theme__details}>
+      <details className={s.bilet__details}>
         <summary>
           <p className={s.bilet__numbervopros}>1.	Культура Беларуси в XIV — первой половине XVI в. Формирование белорусской народности. </p>
         </summary>
@@ -21,11 +21,11 @@ function b11() {
         <p>3. Живопись. Примерами живописи XIV — начала XVI в. являются фрески — роспись водяными красками по свежей штукатурке, которыми были украшены храмы, белорусские живописцы создали множество икон. В первой половине XVI в. развивается портретный жанр. В живописи создаются образы представителей знаменитых магнатских родов. К числу так называемых сарматских (рыцарских) портретов относится портрет Юрия Радзивилла в рыцарских доспехах, которого за высокий рост и физическую силу прозвали «литовским Геркулесом». Название сарматского портрета возникло оттого, что шляхта вела свое происхождение якобы от древних сарматов.</p>
 
       </details>
-      <details className={s.theme__details}>
+      <details className={s.bilet__details}>
         <summary> <p className={s.bilet__numbervopros}>2.	Германский оккупационный режим на территории Беларуси и политика геноцида местного населения в период Великой Отечественной войны. </p></summary>
         текст
       </details>
-      <details className={s.theme__details}>
+      <details className={s.bilet__details}>
         <summary>
           <p className={s.bilet__numbervopros}>3.	Отражение событий истории Беларуси в произведениях белорусской литературы.</p>
         </summary>
