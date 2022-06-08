@@ -72,6 +72,10 @@ h1 {
 }
 
 @media screen and (max-width: 786px) {
+  .search{
+    margin: 300px 5px;
+    padding: 10px;
+  }
   .bilet {
     &__details {
       margin: 0;
