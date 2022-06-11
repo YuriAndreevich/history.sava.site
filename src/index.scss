@@ -1,12 +1,5 @@
 @import-normalize;
 
-.img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 400px;
-}
-
 a {
   display: block;
 }
@@ -37,10 +30,6 @@ code {
 
 }
 
-input {
-  width: 300px;
-}
-
 iframe {
   margin: auto;
   display: block;
@@ -56,26 +45,12 @@ summary {
   list-style: none;
 }
 
-h1 {
-  pointer-events: none;
-  text-align: center;
-  text-decoration: solid;
-  padding: 0;
-  margin: 0;
-  color: black;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 50;
-  font-size: 45px;
-}
-
 @media screen and (max-width: 786px) {
-  .search{
+  .search {
     margin: 300px 5px;
     padding: 10px;
   }
+
   .bilet {
     &__details {
       margin: 0;
