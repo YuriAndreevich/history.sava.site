@@ -1,5 +1,4 @@
 import { Routes, Route } from 'react-router-dom';
-
 import themesData from './Themes/themesData'
 import './App.css';
 import Main from './components/Main';
