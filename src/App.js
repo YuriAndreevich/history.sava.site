@@ -5,6 +5,7 @@ import Main from './components/Main';
 import Menu from './components/Menu'
 import { useState } from 'react';
 import Search from './components/Main/Search';
+import Quiz from './components/Main/Quiz';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Routes>
                 <Route path='/' element={<Main />} />
                 <Route path='/search' element={<Search />} />
+                <Route path='/quiz' element={<Quiz />}/>
                 {themesData.map(link => <Route path={link.href} element={link.el} />)}
             </Routes>
         </div >

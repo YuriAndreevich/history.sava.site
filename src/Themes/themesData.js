@@ -26,12 +26,12 @@ const items = [
     { naz: 'Билет 23', href: '/b23', el: <themes.B23 /> },
     { naz: 'Билет 24', href: '/b24', el: <themes.B24 /> },
     { naz: 'Билет 25', href: '/b25', el: <themes.B25 /> },
-    { naz: '', href: '/b25', el: <themes.B25 /> },
-    { naz: '', href: '/b25', el: <themes.B25 /> },
-    { naz: '', href: '/b25', el: <themes.B25 /> },
-    { naz: '', href: '/b25', el: <themes.B25 /> },
-    { naz: '', href: '/b25', el: <themes.B25 /> },
-    { naz: '', href: '/b25', el: <themes.B25 /> }]
+    { naz: '', href: '/', el: <themes.B25 /> },
+    { naz: '', href: '/', el: <themes.B25 /> },
+    { naz: '', href: '/', el: <themes.B25 /> },
+    { naz: '', href: '/', el: <themes.B25 /> },
+    { naz: '', href: '/', el: <themes.B25 /> },
+    { naz: '', href: '/', el: <themes.B25 /> }]
     
 
 export default items

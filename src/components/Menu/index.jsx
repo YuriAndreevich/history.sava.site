@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './Menu.scss'
 
-const Menu = ({ header, items, active, setActive }) => {
+const Menu = ({ items, active, setActive }) => {
     return (
         <div className={active ? 'menu__active' : 'menu'} onClick={() => setActive(false)}>
             <div className="blur">
@@ -10,6 +10,7 @@ const Menu = ({ header, items, active, setActive }) => {
                     <ul>
                         <li><Link to='/'>Главная</Link></li>
                         <li><Link to='/search'>Поиск по датам</Link></li>
+                        <li><Link to='/quiz'>Тесты</Link></li>
                         <hr style={{ width: '100hv' }} />
                         {items.map((item, index) =>
                             <li key={index}>
