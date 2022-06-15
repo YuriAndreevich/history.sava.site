@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './main.scss'
+import './Search.scss'
 import historyData from './historyData'
 
 function Search() {

@@ -1,106 +1,8 @@
 import React, { useState } from 'react'
-import './Quiz.scss'
-import q1 from '../../img/q/q1.jpg'
+import q1 from '../../../img/quiz/q1.jpg'
+import questions from './testData';
 
-function Quiz() {
-
-    const questions = [
-        {
-            questionText: 'В каком году родился В. И. Ленин?',
-            answerOptions: [
-                { answerText: '1870', isCorrect: true },
-                { answerText: '1875', isCorrect: false },
-                { answerText: '1881', isCorrect: false },
-                { answerText: '1886', isCorrect: false },
-            ]
-        },
-        {
-            questionText: 'Какова настоящая фамилия Ленина?',
-            answerOptions: [
-                { answerText: 'Ленинский', isCorrect: false },
-                { answerText: 'Улинович', isCorrect: false },
-                { answerText: 'Ульянов', isCorrect: true },
-                { answerText: 'Улинский', isCorrect: false },
-            ]
-        },
-        {
-            questionText: 'Какой союз основал Ленин после возвращения из Европы?',
-            answerOptions: [
-                { answerText: 'Российский коммунистический союз молодежи', isCorrect: false },
-                { answerText: '«Русское собрание»', isCorrect: false },
-                { answerText: '«Союз борьбы за освобождение рабочего класса»', isCorrect: true },
-                { answerText: '«Союз русского народа»', isCorrect: false },
-            ]
-        },
-        {
-            questionText: 'Какое наказание понес Ленин за создание «Союза» и активную пропаганду среди рабочих?',
-            answerOptions: [
-                { answerText: 'Пожизненное заключение', isCorrect: false },
-                { answerText: 'Пубичное наказание плетьми', isCorrect: false },
-                { answerText: 'Ссылку', isCorrect: true },
-                { answerText: 'Крупный штраф', isCorrect: false },
-            ]
-        },
-        {
-            questionText: 'Как звали супругу Ленина, которая стала его идейным товарищем?',
-            answerOptions: [
-                { answerText: 'Нина', isCorrect: false },
-                { answerText: 'Надежда', isCorrect: true },
-                { answerText: 'Татьяна', isCorrect: false },
-                { answerText: 'Светлана', isCorrect: false },
-            ]
-        },
-        {
-            questionText: 'Как называлась газета, которую Ленина выпускал с 1900 года?',
-            answerOptions: [
-                { answerText: '«Правда»', isCorrect: false },
-                { answerText: '«Борьба»', isCorrect: false },
-                { answerText: '«Знамя»', isCorrect: false },
-                { answerText: '«Искра»', isCorrect: true },
-            ]
-        },
-        {
-            questionText: 'Где находился Ленин во время революции 1905 года?',
-            answerOptions: [
-                { answerText: 'Англия', isCorrect: false },
-                { answerText: 'Финляндия', isCorrect: false },
-                { answerText: 'Швейцария', isCorrect: true },
-                { answerText: 'Польша', isCorrect: false },
-            ]
-        },
-        {
-            questionText: 'Кто был верным соратником Ленина?',
-            answerOptions: [
-                { answerText: 'Зиновьев', isCorrect: false },
-                { answerText: 'Каменев', isCorrect: false },
-                { answerText: 'Сталин', isCorrect: false },
-                { answerText: 'Все ответы верны', isCorrect: true },
-            ]
-        },
-        {
-            questionText: 'Как называлось новое государство, образованное усилиями Ленина?',
-            answerOptions: [
-                { answerText: 'Монголия', isCorrect: false },
-                { answerText: 'Бурятия', isCorrect: false },
-                { answerText: 'Абхазия', isCorrect: false },
-                { answerText: 'СССР', isCorrect: true },
-            ]
-        },
-        {
-            questionText: 'В каком году скончался Ленин?',
-            answerOptions: [
-                { answerText: '1920', isCorrect: false },
-                { answerText: '1922', isCorrect: false },
-                { answerText: '1924', isCorrect: true },
-                { answerText: '1927', isCorrect: false },
-            ]
-        }
-    ]
-    const [visablePopup, setVisablePopup] = useState(false);
-    const [visableTest, setVisableTest] = useState(false);
-
-
-
+function Test() {
     const [currentQuestion, setCurrentQuestion] = useState(0)
     const [score, setScore] = useState(0)
     const [showScore, setShowScore] = useState(false)
@@ -125,12 +27,13 @@ function Quiz() {
         setShowScore(false)
     }
 
-    return (
-        <div  className='wrapper' style={{ marginTop: '60px' }}>
-            <p> Историческое личности</p>
-            <hr />
-            <div className='quiz'>
 
+    const [visablePopup, setVisablePopup] = useState(false);
+    const [visableTest, setVisableTest] = useState(false);
+
+    return (
+
+        <>
                 <div className="card">
                     <img src={q1} alt='' />
                     <p>
@@ -150,7 +53,7 @@ function Quiz() {
                             <p>Придя к власти, большевики во главе с В.И. Лениным создали новый тип государства, целью которого было стимулировать скорейшее свершение мировой социалистической революции. В отличие от европейского крыла социал-демократии большевики отличались радикализмом и отвергли возможность реформирования капитализма.</p>
                             <p>Ленин обладал широким кругозором и колоссальным багажом знаний во многих областях знаний, в том числе, и в экономике. Он разработал и попытался реализовать политику военного коммунизма, а после осознания ее несостоятельности предложил новую экономическую политику, которая благоприятно сказалась на развитии страны Советов.</p>
                             <p>В 1922 г. после покушения Фанни Каплан и ранения, Ленин тяжело болел и отошел от активной политической деятельности. С мая 1923 г. из-за резкого ухудшения состояния здоровья он проживал на государственной даче Горки (ныне Музей-заповедник). Последний раз Владимир Ильич был в Москве 18-19 октября 1923 г. Умер он в 1924 г. в Горках, под Москвой.</p></div>
-                    </div>}</div>
+                    </div>}
             {visableTest &&
                 <div className="test" onClick={() => setVisableTest(false)}>
                     <div onClick={e => e.stopPropagation()}>            {
@@ -161,19 +64,13 @@ function Quiz() {
                             :
                             <div className='test__content'><p>{questions[currentQuestion].questionText}</p>
                                 <span>Вопрос {currentQuestion + 1}</span> / {questions.length}
-                                <div  className='btn-test'>{questions[currentQuestion].answerOptions.map(item =>
+                                <div className='btn-test'>{questions[currentQuestion].answerOptions.map(item =>
                                     (<button onClick={() => handleAnswerOptionClick(item.isCorrect)}>{item.answerText}</button>)
                                 )}</div></div>
                     }
-                    </div></div>}
-            <p> Историческое памятники</p>
-            <hr />
-            <div className='quiz'>
-
-                <div className="card"></div>
-            </div>
-        </div>
+                    </div></div>
+            }</>
     )
 }
 
-export default Quiz;
+export default Test

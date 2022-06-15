@@ -1,6 +1,6 @@
 import s from './b.module.scss';
 import img from '../img/v3/b23.png'
-import c from '../img/c/c1.png'
+import c from '../img/themesControl/c1.png'
 
 function b23() {
   return (

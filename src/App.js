@@ -4,8 +4,8 @@ import './App.css';
 import Main from './components/Main';
 import Menu from './components/Menu'
 import { useState } from 'react';
-import Search from './components/Main/Search';
-import Quiz from './components/Main/Quiz';
+import Search from './components/Search';
+import Quiz from './components/Quiz';
 
 
 function App() {
