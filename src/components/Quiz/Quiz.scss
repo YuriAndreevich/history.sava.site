@@ -4,7 +4,7 @@
     flex-wrap: wrap;
 
     .card {
-        background-color: #777777;
+        background-color: #464646;
         width: 295px;
         height: 385px;
         text-align: center;
@@ -19,20 +19,22 @@
             border-top-left-radius: 35px;
             height: 275px;
             text-align: center;
-            border: 2px solid #777777;
+            border: 2px solid #464646;
         }
     }
 
     .btn {
-        border: 2px solid #696c93;
         margin: 5px;
-        border-radius: 35px;
-        width: 200px;
+        width: 150px;
         margin: 5px auto 0 auto;
+        border-radius: 5px;
+        background-color: #2a5c25;
+        box-shadow: 2px 2px 5px #000, 2px 2px 5px rgb(119, 117, 117);
     }
 
     .btn:hover {
-        background-color: #696c93;
+        background-color: #20461d;
+        border-radius: 5px;
         cursor: pointer;
     }
 
@@ -46,8 +48,8 @@
 
 
 .spravka {
-    width: 100%;
-    height: 90%;
+    width: 100vw;
+    height: 100vh;
     margin: 0 auto;
     position: absolute;
     display: flex;
@@ -75,7 +77,12 @@
     }
 
 }
-
+.blur {
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(2px);
+    position: fixed;
+}
 .test {
     width: 100vw;
     height: 100vh;
@@ -84,10 +91,10 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-
     z-index: 60;
     align-items: center;
     overflow-x: scroll;
+    
 
     &__content {
         overflow-x: scroll;
