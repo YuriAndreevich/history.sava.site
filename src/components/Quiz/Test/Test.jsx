@@ -27,14 +27,11 @@ function Test() {
         setShowScore(false)
     }
 
-
     const [visablePopup, setVisablePopup] = useState(false);
     const [visableTest, setVisableTest] = useState(false);
 
     return (
-
-        <>
-            <div className="card">
+        <><div className="card">
                 <img src={q1} alt='q1' />
                 <p>
                     Владимир Ильич Ленин
@@ -45,7 +42,7 @@ function Test() {
             {visablePopup && <div className="blur">
                 <div className="spravka" onClick={() => setVisablePopup(false)}>
                     <div className='spravka__content' onClick={e => e.stopPropagation()}>
-                        
+
                         <p>Владимир Ленин (настоящая фамилия Ульянов) родился в 1870 г. в Симбирске в семье инспектора народных училищ. В 1879-1887 гг. Владимир учился в гимназии и окончил ее с золотой медалью. Александр Ульянов, старший сын в семье, был активным революционером-народовольцем и образцом для подражания младшему брату. В 1887 г. Александр был казнен за подготовку покушения на жизнь императора Александра III. В этом же году В.И. Ульянов поступил на юридический факультет Казанского университета, но вскоре был отчислен без права восстановления за участие в деятельности нелегального кружка Богораза.</p>
                         <p>В 1891 г. В. Ульянов экстерном окончил юридический факультет Санкт-Петербургского университета. В это же время он работает над своей первой книгой &laquo;Что такое &laquo;друзья народа&raquo; и как они воюют против социал-демократов?&raquo;. В 1895 г. Ульянов-Ленин принимает активное участие в создании Петербургского &laquo;Союза борьбы за освобождение рабочего класса&raquo;. За эту деятельность В.И. Ленин был сослан на три года в село Шушенское Енисейской губернии. В 1900 г. он вынужден был уехать в Западную Европу, где издавал первую общерусскую нелегальную марксистскую газету &laquo;Искра&raquo;.</p>
                         <p>В 1903 г. на II съезде российских социал-демократов в результате раскола на меньшевиков и большевиков В.И. Ленин возглавил &laquo;большинство&raquo;, создав затем большевистскую партию.</p>
@@ -56,22 +53,22 @@ function Test() {
                         <p>В 1922 г. после покушения Фанни Каплан и ранения, Ленин тяжело болел и отошел от активной политической деятельности. С мая 1923 г. из-за резкого ухудшения состояния здоровья он проживал на государственной даче Горки (ныне Музей-заповедник). Последний раз Владимир Ильич был в Москве 18-19 октября 1923 г. Умер он в 1924 г. в Горках, под Москвой.</p></div>
                 </div></div>}
             {visableTest &&
-            <div className="blur">
-                <div className="test" onClick={() => setVisableTest(false)}>
-                    {showScore
-                        ?
-                        <div className='test__content' onClick={(e) => e.stopPropagation()}> Правильных ответов {score}из {questions.length}
-                            <button onClick={refresh}>Попробовать еще раз</button></div>
-                        :
-                        <div className='test__content' onClick={(e) => e.stopPropagation()}><p>{questions[currentQuestion].questionText}</p>
-                            <span>Вопрос {currentQuestion + 1}</span> / {questions.length}
-                            <div className='btn-test'>{questions[currentQuestion].answerOptions.map(item =>
-                                (<button onClick={() => handleAnswerOptionClick(item.isCorrect)}>{item.answerText}</button>)
-                            )}</div></div>
-                    }
-                </div>
+                <div className="blur">
+                    <div className="test" onClick={() => setVisableTest(false)}>
+                        {showScore
+                            ?
+                            <div className='test__content' onClick={(e) => e.stopPropagation()}> Правильных ответов {score}из {questions.length}
+                                <button onClick={refresh}>Попробовать еще раз</button></div>
+                            :
+                            <div className='test__content' onClick={(e) => e.stopPropagation()}><p>{questions[currentQuestion].questionText}</p>
+                                <span>Вопрос {currentQuestion + 1}</span> / {questions.length}
+                                <div className='btn-test'>{questions[currentQuestion].answerOptions.map(item =>
+                                    (<button onClick={() => handleAnswerOptionClick(item.isCorrect)}>{item.answerText}</button>)
+                                )}</div></div>
+                        }
+                    </div>
                 </div>}</>
     )
 }
 
-export default Test
+export default Test;
