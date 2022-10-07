@@ -1,8 +1,7 @@
 import "./Training.scss";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import schema from "./../Img/schema1.png";
 import cx from "classnames";
-
 
 import strelaSVG from "../Img/strela.svg";
 
@@ -12,7 +11,25 @@ import DimovoyToch from "../Img/training/извещательДымовойТо�
 import izvRuchn from "../Img/training/извещательРучной.png";
 import MMenu from "./MMenu";
 
+import {Howl} from 'howler'
+
 function Training() {
+
+function soundPlay(src) {
+  const sound = new Howl ({
+    src,
+    html5: true
+  })
+  sound.play();
+}
+const audioClips = [
+  {sound: 'https://soundbible.com/mp3/45min_april_rainstorm-mike-koenig.mp3', label: 'rain'},
+  {sound: ' ', label: 'rain'}
+]
+useEffect(() => {
+//soundPlay(audioClips[0].sound)
+
+}, [])
 
 
   const [currentBoard, setCurrentBoard] = useState(null);
@@ -390,7 +407,7 @@ function Training() {
       <button onClick={checkCode} className="absolute MyButton">
         Проверка
       </button>
-      <MMenu />
+      <MMenu  />
       <img src={schema} className="boardImg absolute" alt="" />
     </div>
   );

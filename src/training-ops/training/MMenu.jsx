@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import "./Training.scss";
 import settingsSVG from "../Img/setting.svg";
@@ -23,9 +23,13 @@ import {
   MenuItem,
   Portal,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 function MMenu() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  useEffect(() => {
+    onOpen("true");
+  }, []); // eslint-disable-line
 
   return (
     <>
@@ -60,7 +64,9 @@ function MMenu() {
                     </MenuButton>
                     <Portal>
                       <MenuList zIndex="10000">
-                        <MenuItem>Уровень 1</MenuItem>
+                        <MenuItem>
+                          <Link to="/training/1l1">Уровень 1</Link>
+                        </MenuItem>
                         <MenuItem>Уровень 2</MenuItem>
                         <MenuItem>Уровень 3</MenuItem>
                       </MenuList>
@@ -72,7 +78,9 @@ function MMenu() {
                     </MenuButton>
                     <Portal>
                       <MenuList zIndex="10000">
-                        <MenuItem>Уровень 1</MenuItem>
+                        <MenuItem>
+                          <Link to="/training/2l1">Уровень 1</Link>
+                        </MenuItem>
                         <MenuItem>Уровень 2</MenuItem>
                         <MenuItem>Уровень 3</MenuItem>
                       </MenuList>
@@ -84,7 +92,23 @@ function MMenu() {
                     </MenuButton>
                     <Portal>
                       <MenuList zIndex="10000">
-                        <MenuItem>Уровень 1</MenuItem>
+                        <MenuItem>
+                          <Link to="/training/3l1">Уровень 1</Link>
+                        </MenuItem>
+                        <MenuItem>Уровень 2</MenuItem>
+                        <MenuItem>Уровень 3</MenuItem>
+                      </MenuList>
+                    </Portal>
+                  </Menu>
+                  <Menu>
+                    <MenuButton className="menu-training-card">
+                      Задание 4
+                    </MenuButton>
+                    <Portal>
+                      <MenuList zIndex="10000">
+                        <MenuItem>
+                          <Link to="/training/4l1">Уровень 1</Link>
+                        </MenuItem>
                         <MenuItem>Уровень 2</MenuItem>
                         <MenuItem>Уровень 3</MenuItem>
                       </MenuList>
