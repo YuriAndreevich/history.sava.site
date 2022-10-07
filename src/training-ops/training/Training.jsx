@@ -4,6 +4,7 @@ import schema from "./../Img/schema1.png";
 import cx from "classnames";
 
 import strelaSVG from "../Img/strela.svg";
+import settingsSVG from "../Img/setting.svg";
 
 import ZvukIzv from "../Img/training/звуковойОповещатель.png";
 import SvetOpov from "../Img/training/световойОповещатель.png";
@@ -15,6 +16,7 @@ function Training() {
   const [currentItem, setCurrentItem] = useState(null);
 
   const [isCheck, setIsCheck] = useState(false);
+  const [menu, setMenu] = useState(true);
   const [isRotate, setIsRotate] = useState(false);
 
   const [boards, setBoard] = useState([
@@ -349,6 +351,7 @@ equal ? (boards[i].color = "green")  : (boards[i].color = "red")
 
   return (
     <div className="dnd">
+      {menu && <div className="menu-training">2312 </div>}
       {boards.map((board, i) => (
         <div className={cx("absolute board board") + i + " " + boards[i].color}>
           <div
@@ -384,6 +387,7 @@ equal ? (boards[i].color = "green")  : (boards[i].color = "red")
       <button onClick={checkCode} className="absolute MyButton">
         Проверка
       </button>
+      <img src={settingsSVG} onClick={()=>setMenu(!menu)} className="absolute menu-training__btn" alt=""/> 
       <img src={schema} className="boardImg absolute" alt="" />
     </div>
   );
