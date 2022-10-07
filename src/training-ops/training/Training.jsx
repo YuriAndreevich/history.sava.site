@@ -3,20 +3,22 @@ import React, { useState } from "react";
 import schema from "./../Img/schema1.png";
 import cx from "classnames";
 
+
 import strelaSVG from "../Img/strela.svg";
-import settingsSVG from "../Img/setting.svg";
 
 import ZvukIzv from "../Img/training/звуковойОповещатель.png";
 import SvetOpov from "../Img/training/световойОповещатель.png";
 import DimovoyToch from "../Img/training/извещательДымовойТочечный.png";
 import izvRuchn from "../Img/training/извещательРучной.png";
+import MMenu from "./MMenu";
 
 function Training() {
+
+
   const [currentBoard, setCurrentBoard] = useState(null);
   const [currentItem, setCurrentItem] = useState(null);
 
   const [isCheck, setIsCheck] = useState(false);
-  const [menu, setMenu] = useState(true);
   const [isRotate, setIsRotate] = useState(false);
 
   const [boards, setBoard] = useState([
@@ -326,7 +328,7 @@ function Training() {
           const a1 = setToArray(a),
             a2 = setToArray(b);
           return (
-            a1.length == a2.length &&
+            a1.length === a2.length &&
             a1.every(function (v, i) {
               return v === a2[i];
             })
@@ -338,20 +340,21 @@ function Training() {
         }
       }
       if (Array.isArray(arr1) && Array.isArray(arr2)) {
-equal ? (boards[i].color = "green")  : (boards[i].color = "red")
-      } else {(boards[i].color = "red") }
+        equal ? (boards[i].color = "green") : (boards[i].color = "red");
+      } else {
+        boards[i].color = "red";
+      }
       //
       if (!Array.isArray(arr1) && !Array.isArray(arr2)) {
-      arr1 === arr2 ? (boards[i].color = "green") : (boards[i].color = "red");
-      setIsCheck(!isCheck);
-      setIsRotate(!isRotate);
-      }  
+        arr1 === arr2 ? (boards[i].color = "green") : (boards[i].color = "red");
+        setIsCheck(!isCheck);
+        setIsRotate(!isRotate);
+      }
     }
   };
 
   return (
     <div className="dnd">
-      {menu && <div className="menu-training">2312 </div>}
       {boards.map((board, i) => (
         <div className={cx("absolute board board") + i + " " + boards[i].color}>
           <div
@@ -387,7 +390,7 @@ equal ? (boards[i].color = "green")  : (boards[i].color = "red")
       <button onClick={checkCode} className="absolute MyButton">
         Проверка
       </button>
-      <img src={settingsSVG} onClick={()=>setMenu(!menu)} className="absolute menu-training__btn" alt=""/> 
+      <MMenu />
       <img src={schema} className="boardImg absolute" alt="" />
     </div>
   );

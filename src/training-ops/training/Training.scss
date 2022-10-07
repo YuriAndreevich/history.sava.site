@@ -135,10 +135,10 @@
 
 .red {
   background-color: red;
-    animation-name: blink;
-    animation-timing-function: linear;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;  
+  animation-name: blink;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 
   @keyframes blink {
     50% {
@@ -158,42 +158,50 @@
   right: 0;
   text-align: center;
   bottom: 18px;
-    box-shadow:inset 0px 0px 15px 3px #23395e;
-    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-    background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
-    background-color:#2e466e;
-    border-radius:17px;
-    border:1px solid #1f2f47;
-    cursor:pointer;
-    color:#ffffff;
-    text-shadow:0px 1px 0px #263666;
-    &:hover {
-      background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
-      background-color:#415989;
-    } 
-    &:active {
-      bottom: 17px;
-    }
-    
-  
+  box-shadow: inset 0px 0px 15px 3px #23395e;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  background: linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+  background-color: #2e466e;
+  border-radius: 17px;
+  border: 1px solid #1f2f47;
+  cursor: pointer;
+  color: #ffffff;
+  text-shadow: 0px 1px 0px #263666;
+
+  &:hover {
+    background: linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+    background-color: #415989;
+  }
+
+  &:active {
+    bottom: 17px;
+  }
+
+
 }
-.menu-training{
-  position: absolute;
-  width: 900px;
-  height: 500px;
-  background-color: #1f2f47;
-  top: 50%;
-  left: 50%;
-  color: #fff;
-  transform: translate(-50%, -50%);
+
+.menu-training {
   z-index: 1;
-  &__btn{
+
+  &__btn {
     margin-left: auto;
     margin-right: auto;
     left: 280px;
     right: 0;
     bottom: 18px;
     width: 50px;
+  }
+
+  &-card {
+    margin-top: 30px;
+    width: 100px;
+
+  }
+
+  &-tab {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
   }
 }
 
@@ -208,17 +216,20 @@
   transform: rotate(90deg);
   z-index: -1;
 }
+
 .rotate-center {
-	-webkit-animation: rotate-center 0.6s ease-in-out both;
-	        animation: rotate-center 0.6s ease-in-out both;
+  -webkit-animation: rotate-center 0.6s ease-in-out both;
+  animation: rotate-center 0.6s ease-in-out both;
 }
+
 @keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
