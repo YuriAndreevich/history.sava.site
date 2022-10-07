@@ -10,27 +10,29 @@ import SvetOpov from "../Img/training/световойОповещатель.png
 import DimovoyToch from "../Img/training/извещательДымовойТочечный.png";
 import izvRuchn from "../Img/training/извещательРучной.png";
 import MMenu from "./MMenu";
+import net from '../../sound/net.mp3'
+import da from '../../sound/net.mp3'
 
-import {Howl} from 'howler'
+import { Howl } from "howler";
 
 function Training() {
+  function soundPlay(src) {
+    const sound = new Howl({
+      src,
+      html5: true,
+    });
+    sound.play();
+  }
+  const audioClips = [
+    {
+      sound: net,
+      label: "rain",
+    },
+    { sound: da , label: "rain" },
+  ];
+  useEffect(() => {
 
-function soundPlay(src) {
-  const sound = new Howl ({
-    src,
-    html5: true
-  })
-  sound.play();
-}
-const audioClips = [
-  {sound: 'https://soundbible.com/mp3/45min_april_rainstorm-mike-koenig.mp3', label: 'rain'},
-  {sound: ' ', label: 'rain'}
-]
-useEffect(() => {
-//soundPlay(audioClips[0].sound)
-
-}, [])
-
+  }, []);
 
   const [currentBoard, setCurrentBoard] = useState(null);
   const [currentItem, setCurrentItem] = useState(null);
@@ -55,37 +57,37 @@ useEffect(() => {
           title: "3",
         },
         {
-          id: 4,
+          id: [12, 4],
           body: <img className="imgIcon" src={SvetOpov} alt="" />,
           title: "4",
         },
         {
-          id: 5,
+          id: [5, 6, 7, 8, 9, 10],
           body: <img className="imgIcon" src={DimovoyToch} alt="" />,
           title: "5",
         },
         {
-          id: 6,
+          id: [5, 6, 7, 8, 9, 10],
           body: <img className="imgIcon" src={DimovoyToch} alt="" />,
           title: "6",
         },
         {
-          id: 7,
+          id: [5, 6, 7, 8, 9, 10],
           body: <img className="imgIcon" src={DimovoyToch} alt="" />,
           title: "7",
         },
         {
-          id: 8,
+          id: [5, 6, 7, 8, 9, 10],
           body: <img className="imgIcon" src={DimovoyToch} alt="" />,
           title: "8",
         },
         {
-          id: 9,
+          id: [5, 6, 7, 8, 9, 10],
           body: <img className="imgIcon" src={DimovoyToch} alt="" />,
           title: "9",
         },
         {
-          id: 10,
+          id: [5, 6, 7, 8, 9, 10],
           body: <img className="imgIcon" src={DimovoyToch} alt="" />,
           title: "10",
         },
@@ -95,7 +97,7 @@ useEffect(() => {
           title: "11",
         },
         {
-          id: 12,
+          id: [12, 4],
           body: <img className="imgIcon" src={SvetOpov} alt="" />,
           title: "12",
         },
@@ -104,111 +106,78 @@ useEffect(() => {
     },
     {
       id: 2,
-      title: (
-        <div>
-          <img src={strelaSVG} alt="" className="strelka" />
-        </div>
-      ),
+      title: <img src={strelaSVG} alt="" className="strelka" />,
+
       items: [],
       color: null,
     },
     {
       id: 3,
-      title: (
-        <div>
-          <img src={strelaSVG} alt="" className="strelka" />
-        </div>
-      ),
+      title: <img src={strelaSVG} alt="" className="strelka" />,
+
       items: [],
       color: null,
     },
     {
       id: 4,
-      title: (
-        <div>
-          <img src={strelaSVG} alt="" className="strelka" />
-        </div>
-      ),
+      title: <img src={strelaSVG} alt="" className="strelka" />,
+
       items: [],
       color: null,
     },
     {
       id: 5,
-      title: (
-        <div>
-          <img src={strelaSVG} alt="" className="strelka" />
-        </div>
-      ),
+      title: <img src={strelaSVG} alt="" className="strelka" />,
+
       items: [],
       color: null,
     },
     {
       id: 6,
-      title: (
-        <div>
-          <img src={strelaSVG} alt="" className="strelka" />
-        </div>
-      ),
+      title: <img src={strelaSVG} alt="" className="strelka" />,
+
       items: [],
       color: null,
     },
     {
       id: 7,
-      title: (
-        <div>
-          <img src={strelaSVG} alt="" className="strelka" />
-        </div>
-      ),
+      title: <img src={strelaSVG} alt="" className="strelka" />,
+
       items: [],
       color: null,
     },
     {
       id: 8,
-      title: (
-        <div>
-          <img src={strelaSVG} alt="" className="strelka" />
-        </div>
-      ),
+      title: <img src={strelaSVG} alt="" className="strelka" />,
+
       items: [],
       color: null,
     },
     {
       id: 9,
-      title: (
-        <div>
-          <img src={strelaSVG} alt="" className="strelka" />
-        </div>
-      ),
+      title: <img src={strelaSVG} alt="" className="strelka" />,
+
       items: [],
       color: null,
     },
     {
       id: 10,
-      title: (
-        <div>
-          <img src={strelaSVG} alt="" className="strelka" />
-        </div>
-      ),
+      title: <img src={strelaSVG} alt="" className="strelka" />,
+
       items: [],
       color: null,
     },
     {
       id: 11,
-      title: (
-        <div>
-          <img src={strelaSVG} alt="" className="strelka" />
-        </div>
-      ),
+      title: <img src={strelaSVG} alt="" className="strelka" />,
+
       items: [],
       color: null,
     },
     {
       id: 12,
-      title: (
-        <div>
-          <img src={strelaSVG} alt="" className="strelka" />
-        </div>
-      ),
+      title: <img src={strelaSVG} alt="" className="strelka" />,
+
       items: [],
       color: null,
     },
@@ -231,39 +200,39 @@ useEffect(() => {
     },
 
     {
-      id: 4,
+      id: [12, 4],
       title: "4",
-      items: [{ id: 4, title: "4" }],
+      items: [{ id: [12, 4], title: "4" }],
     },
     {
-      id: 5,
+      id: [5, 6, 7, 8, 9, 10],
       title: "5",
-      items: [{ id: 5, title: "5" }],
+      items: [{ id: [5, 6, 7, 8, 9, 10], title: "5" }],
     },
     {
-      id: 6,
+      id: [5, 6, 7, 8, 9, 10],
       title: "6",
-      items: [{ id: 6, title: "6" }],
+      items: [{ id: [5, 6, 7, 8, 9, 10], title: "6" }],
     },
     {
-      id: 7,
+      id: [5, 6, 7, 8, 9, 10],
       title: "7",
-      items: [{ id: 7, title: "7" }],
+      items: [{ id: [5, 6, 7, 8, 9, 10], title: "7" }],
     },
     {
-      id: 8,
+      id: [5, 6, 7, 8, 9, 10],
       title: "8",
-      items: [{ id: 8, title: "8" }],
+      items: [{ id: [5, 6, 7, 8, 9, 10], title: "8" }],
     },
     {
-      id: 9,
+      id: [5, 6, 7, 8, 9, 10],
       title: "9",
-      items: [{ id: 9, title: "9" }],
+      items: [{ id: [5, 6, 7, 8, 9, 10], title: "9" }],
     },
     {
-      id: 10,
+      id: [5, 6, 7, 8, 9, 10],
       title: "10",
-      items: [{ id: 10, title: "10" }],
+      items: [{ id: [5, 6, 7, 8, 9, 10], title: "10" }],
     },
     {
       id: [11, 3],
@@ -271,9 +240,9 @@ useEffect(() => {
       items: [{ id: [11, 3], title: "11" }],
     },
     {
-      id: 12,
+      id: [12, 4],
       title: "12",
-      items: [{ id: 12, title: "12" }],
+      items: [{ id: [12, 4], title: "12" }],
     },
   ];
 
@@ -367,11 +336,15 @@ useEffect(() => {
         setIsCheck(!isCheck);
         setIsRotate(!isRotate);
       }
+          if(boards.shift().color === 'green'){
+      soundPlay(audioClips[0].sound)
+    } else {soundPlay(audioClips[1].sound)}
     }
   };
 
   return (
     <div className="dnd">
+      
       {boards.map((board, i) => (
         <div className={cx("absolute board board") + i + " " + boards[i].color}>
           <div
@@ -407,7 +380,7 @@ useEffect(() => {
       <button onClick={checkCode} className="absolute MyButton">
         Проверка
       </button>
-      <MMenu  />
+      <MMenu />
       <img src={schema} className="boardImg absolute" alt="" />
     </div>
   );

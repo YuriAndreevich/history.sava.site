@@ -98,6 +98,8 @@
   font-weight: 700;
   height: 0;
   z-index: 4;
+  margin-bottom: 10px;
+  width: 40px;
 }
 
 .board__title__main {
@@ -209,7 +211,6 @@
 }
 
 .strelka {
-  margin-top: 36px;
   margin-left: 15px;
   width: 10px;
   transform: rotate(90deg);
