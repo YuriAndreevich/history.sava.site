@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import "./Training.scss";
+import "../levels/Training.scss";
 import settingsSVG from "../Img/setting.svg";
 
 import {

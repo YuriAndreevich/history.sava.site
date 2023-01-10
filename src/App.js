@@ -6,18 +6,18 @@ import Menu from "./components/Menu";
 import { useState, useEffect } from "react";
 import Search from "./components/Search";
 import Quiz from "./components/Quiz";
-import Training from "./training-ops/training/Training";
+import Training from "./training-ops/levels/1l1";
 
 function App() {
   const [menuActive, setMenuActive] = useState(false);
   const [HiddenNav, setHiddenNav] = useState(false);
 
   useEffect(() => {
-    if (window.location.pathname === '/training') {
+    if (window.location.pathname === '/training' || './training/*') {
       setHiddenNav(!HiddenNav);
     }
   }, [])// eslint-disable-line
-  
+
 
 
   return (

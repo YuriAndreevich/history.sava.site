@@ -1,17 +1,17 @@
-import "./Training.scss";
+import "../Training.scss";
 import React, { useState, useEffect } from "react";
-import schema from "./../Img/schema1.png";
+import schema from "../../Img/schema1.png";
 import cx from "classnames";
 
-import strelaSVG from "../Img/strela.svg";
+import strelaSVG from "../../Img/strela.svg";
 
-import ZvukIzv from "../Img/training/звуковойОповещатель.png";
-import SvetOpov from "../Img/training/световойОповещатель.png";
-import DimovoyToch from "../Img/training/извещательДымовойТочечный.png";
-import izvRuchn from "../Img/training/извещательРучной.png";
-import MMenu from "./MMenu";
-import net from '../../sound/net.mp3'
-import da from '../../sound/net.mp3'
+import ZvukIzv from "../../Img/training/звуковойОповещатель.png";
+import SvetOpov from "../../Img/training/световойОповещатель.png";
+import DimovoyToch from "../../Img/training/извещательДымовойТочечный.png";
+import izvRuchn from "../../Img/training/извещательРучной.png";
+import MMenu from "../../training/MMenu";
+import net from "../../../sound/net.mp3";
+import da from "../../../sound/da.mp3";
 
 import { Howl } from "howler";
 
@@ -28,11 +28,9 @@ function Training() {
       sound: net,
       label: "rain",
     },
-    { sound: da , label: "rain" },
+    { sound: da, label: "rain" },
   ];
-  useEffect(() => {
-
-  }, []);
+  useEffect(() => {}, []);
 
   const [currentBoard, setCurrentBoard] = useState(null);
   const [currentItem, setCurrentItem] = useState(null);
@@ -336,15 +334,16 @@ function Training() {
         setIsCheck(!isCheck);
         setIsRotate(!isRotate);
       }
-          if(boards.shift().color === 'green'){
-      soundPlay(audioClips[0].sound)
-    } else {soundPlay(audioClips[1].sound)}
+      if (boards.shift().color === "green") {
+        soundPlay(audioClips[0].sound);
+      } else {
+        soundPlay(audioClips[1].sound);
+      }
     }
   };
 
   return (
     <div className="dnd">
-      
       {boards.map((board, i) => (
         <div className={cx("absolute board board") + i + " " + boards[i].color}>
           <div
